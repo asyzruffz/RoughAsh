@@ -62,8 +62,9 @@ MonoBehaviour:
   radius: 1
   thickness: 0.2
   segment: 6
-  integrity: 5
+  integrity: 1
   colour: {r: 1, g: 1, b: 1, a: 1}
+  sound: {fileID: 8300000, guid: a166b1b96a44319469ffc9b13cdfcfef, type: 3}
   onBreached:
     m_PersistentCalls:
       m_Calls: []

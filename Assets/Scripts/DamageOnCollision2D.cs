@@ -24,6 +24,12 @@ namespace RoughAsh
 
             var capsule = GetComponent<Capsule>();
             capsule?.FadeColour(health.Unit());
+
+            var audio = GetComponent<AudioSource>();
+            if (audio && audio.enabled)
+            {
+                audio.Play();
+            }
         }
 
         void OnTriggerExit2D(Collider2D collision)

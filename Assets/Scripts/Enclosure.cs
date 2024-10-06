@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Audio;
 using UnityEngine.Events;
 
 namespace RoughAsh
@@ -19,6 +20,8 @@ namespace RoughAsh
         int integrity = 5;
         [SerializeField]
         Color colour = Color.white;
+        [SerializeField]
+        AudioResource sound;
 
         [Space]
         [SerializeField]
@@ -57,9 +60,12 @@ namespace RoughAsh
                 wallSegment.transform.localScale = scale;
 
                 var health = wallSegment.GetComponent<Health>();
-                if (health)
+                health?.SetMax(integrity);
+
+                var audio = wallSegment.GetComponent<AudioSource>();
+                if (audio)
                 {
-                    health.SetMax(integrity);
+                    audio.resource = sound;
                 }
 
                 var dmg = wallSegment.GetComponent<DamageOnCollision2D>();
