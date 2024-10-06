@@ -16,7 +16,9 @@ namespace RoughAsh
 
         Color startColor;
         Color transparent;
+        bool started = false;
         bool done = false;
+        float timer;
 
         void Start()
         {
@@ -33,16 +35,23 @@ namespace RoughAsh
 
         void Update()
         {
-            if (done) return;
+            if (!started || done) return;
 
-            if (duration <= 0)
+            if (timer <= 0)
             {
                 done = true;
                 onDone?.Invoke();
             }
 
-            img.color = Color.Lerp(transparent, startColor, duration);
-            duration -= Time.deltaTime;
+            img.color = Color.Lerp(transparent, startColor, timer / duration);
+            timer -= Time.deltaTime;
+        }
+
+        public void StartFade()
+        {
+            timer = duration;
+            started = true;
+            done = false;
         }
     }
 }

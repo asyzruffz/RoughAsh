@@ -1,24 +1,38 @@
+using RoughAsh.Recording;
 using UnityEngine;
+using UnityEngine.Events;
 
 namespace RoughAsh
 {
     public class Starter : MonoBehaviour
     {
         [SerializeField]
-        Ball ball;
+        VideoRecordingManager recording;
+
+        [Space]
+        [SerializeField]
+        UnityEvent onStart;
 
         void Start()
         {
-            if (ball == null)
+            if (recording == null)
             {
-                Debug.LogError("Starter: Ball is null");
+                Debug.LogError("Starter: Recording is null");
                 return;
             }
+
+            Invoke("StartRecording", 1f);
         }
 
-        public void StartSimulating()
+        void StartRecording()
         {
-            ball.StartMoving();
+            recording?.StartRecording();
+            Simulate();
+        }
+
+        void Simulate()
+        {
+            onStart?.Invoke();
         }
     }
 }

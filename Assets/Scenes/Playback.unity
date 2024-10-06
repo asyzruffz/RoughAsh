@@ -311,7 +311,7 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
-  m_VertexColorAlwaysGammaSpace: 0
+  m_VertexColorAlwaysGammaSpace: 1
   m_AdditionalShaderChannelsFlag: 0
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
@@ -609,6 +609,66 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 81934047403282166, guid: b08821f8e74f4ee4199053148319ab10, type: 3}
   m_PrefabInstance: {fileID: 6298477815056099305}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &818958833
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 818958835}
+  - component: {fileID: 818958834}
+  m_Layer: 0
+  m_Name: Starter
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &818958834
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 818958833}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a09aca88b3da6941b67ada40f2b9f5f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  recording: {fileID: 1421565346}
+  onStart:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1095592592}
+        m_TargetAssemblyTypeName: RoughAsh.FadeOut, Assembly-CSharp
+        m_MethodName: StartFade
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!4 &818958835
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 818958833}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &906077982 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7021752303969537651, guid: 5002a16ad8ad1364ca3490b8e3787566, type: 3}
@@ -773,10 +833,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   img: {fileID: 1095592593}
-  duration: 1
+  duration: 2
   onDone:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1238570483}
+        m_TargetAssemblyTypeName: RoughAsh.Ball, Assembly-CSharp
+        m_MethodName: StartMoving
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1095592593
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1399,41 +1471,9 @@ PrefabInstance:
       propertyPath: disabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 453598251387757480, guid: fb21db1fc7a447f4bba22571a1b5b4de, type: 3}
-      propertyPath: recordOnStart
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 3059086813585199050, guid: fb21db1fc7a447f4bba22571a1b5b4de, type: 3}
       propertyPath: m_Name
       value: Recording Manager
-      objectReference: {fileID: 0}
-    - target: {fileID: 5451905157884050021, guid: fb21db1fc7a447f4bba22571a1b5b4de, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5451905157884050021, guid: fb21db1fc7a447f4bba22571a1b5b4de, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5451905157884050021, guid: fb21db1fc7a447f4bba22571a1b5b4de, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5451905157884050021, guid: fb21db1fc7a447f4bba22571a1b5b4de, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5451905157884050021, guid: fb21db1fc7a447f4bba22571a1b5b4de, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5451905157884050021, guid: fb21db1fc7a447f4bba22571a1b5b4de, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5451905157884050021, guid: fb21db1fc7a447f4bba22571a1b5b4de, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5451905157884050021, guid: fb21db1fc7a447f4bba22571a1b5b4de, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1700,6 +1740,7 @@ SceneRoots:
   - {fileID: 619394802}
   - {fileID: 382900177106567060}
   - {fileID: 566493429}
+  - {fileID: 818958835}
   - {fileID: 6096630588047593482}
   - {fileID: 8107499171954063464}
   - {fileID: 2008611154}

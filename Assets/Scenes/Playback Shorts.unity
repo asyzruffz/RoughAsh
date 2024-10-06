@@ -311,7 +311,7 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
-  m_VertexColorAlwaysGammaSpace: 0
+  m_VertexColorAlwaysGammaSpace: 1
   m_AdditionalShaderChannelsFlag: 0
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
@@ -366,7 +366,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a09aca88b3da6941b67ada40f2b9f5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ball: {fileID: 1238570483}
+  recording: {fileID: 1421565346}
+  onStart:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1095592592}
+        m_TargetAssemblyTypeName: RoughAsh.FadeOut, Assembly-CSharp
+        m_MethodName: StartFade
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!4 &290808669
 Transform:
   m_ObjectHideFlags: 0
@@ -822,13 +837,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   img: {fileID: 1095592593}
-  duration: 2
+  duration: 1.5
   onDone:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 290808668}
-        m_TargetAssemblyTypeName: RoughAsh.Starter, Assembly-CSharp
-        m_MethodName: StartSimulating
+      - m_Target: {fileID: 1238570483}
+        m_TargetAssemblyTypeName: RoughAsh.Ball, Assembly-CSharp
+        m_MethodName: StartMoving
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1464,45 +1479,9 @@ PrefabInstance:
       propertyPath: isShorts
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 453598251387757480, guid: fb21db1fc7a447f4bba22571a1b5b4de, type: 3}
-      propertyPath: settings
-      value: 
-      objectReference: {fileID: 11400000, guid: f8a895ae354b5af48bab32b3f5d763a6, type: 2}
-    - target: {fileID: 453598251387757480, guid: fb21db1fc7a447f4bba22571a1b5b4de, type: 3}
-      propertyPath: recordOnStart
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 3059086813585199050, guid: fb21db1fc7a447f4bba22571a1b5b4de, type: 3}
       propertyPath: m_Name
       value: Recording Manager
-      objectReference: {fileID: 0}
-    - target: {fileID: 5451905157884050021, guid: fb21db1fc7a447f4bba22571a1b5b4de, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5451905157884050021, guid: fb21db1fc7a447f4bba22571a1b5b4de, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5451905157884050021, guid: fb21db1fc7a447f4bba22571a1b5b4de, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5451905157884050021, guid: fb21db1fc7a447f4bba22571a1b5b4de, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5451905157884050021, guid: fb21db1fc7a447f4bba22571a1b5b4de, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5451905157884050021, guid: fb21db1fc7a447f4bba22571a1b5b4de, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5451905157884050021, guid: fb21db1fc7a447f4bba22571a1b5b4de, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5451905157884050021, guid: fb21db1fc7a447f4bba22571a1b5b4de, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
