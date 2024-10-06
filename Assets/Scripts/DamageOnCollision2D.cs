@@ -22,11 +22,8 @@ namespace RoughAsh
         {
             health.TakeDamage(1);
 
-            var sprite = GetComponent<SpriteRenderer>();
-            if (sprite)
-            {
-                sprite.color = Color.Lerp(new Color(0f, 0f, 0f, 0f), Color.white, health.Unit());
-            }
+            var capsule = GetComponent<Capsule>();
+            capsule?.FadeColour(health.Unit());
         }
 
         void OnTriggerExit2D(Collider2D collision)

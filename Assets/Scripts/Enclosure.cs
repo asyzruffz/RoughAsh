@@ -17,6 +17,8 @@ namespace RoughAsh
         int segment = 4;
         [SerializeField]
         int integrity = 5;
+        [SerializeField]
+        Color colour = Color.white;
 
         [Space]
         [SerializeField]
@@ -42,6 +44,7 @@ namespace RoughAsh
             for (int i = 0; i < segment; i++)
             {
                 var wallSegment = Instantiate(wallPrefab, transform);
+                wallSegment.Colour = colour;
                 wallSegment.Resize(length);
 
                 float angle = angleSegment * i;

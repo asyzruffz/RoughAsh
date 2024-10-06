@@ -5,6 +5,7 @@ namespace RoughAsh
     [ExecuteInEditMode]
     public class Capsule : MonoBehaviour
     {
+        public Color Colour = Color.white;
         [SerializeField]
         float length = 2f;
 
@@ -25,6 +26,15 @@ namespace RoughAsh
             needUpdate = true;
         }
 
+        public void FadeColour(float t)
+        {
+            var sprite = GetComponent<SpriteRenderer>();
+            if (sprite)
+            {
+                sprite.color = Color.Lerp(new Color(0f, 0f, 0f, 0f), Colour, t);
+            }
+        }
+
         public void Resize(float size)
         {
             length = size;
@@ -37,6 +47,7 @@ namespace RoughAsh
             if (sprite)
             {
                 sprite.size = new Vector2(1, length);
+                sprite.color = Colour;
             }
 
             var collider = GetComponent<CapsuleCollider2D>();
