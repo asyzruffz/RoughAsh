@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8d6bfb7c581add45b3f8379ac8d35bc, type: 3}
+  m_Name: Recording
+  m_EditorClassIdentifier: 
+  ControllerSettings: {fileID: 11400000, guid: 85daf1dbde62f3c4d8107edf9f01c820, type: 2}
+  isShorts: 0
+  VideoRecorderSettings: {fileID: 11400000, guid: 62ce44dd74622d349a681accecad9c55, type: 2}
+  ShortsRecorderSettings: {fileID: 11400000, guid: ceab9e9f4479eb24cad1c224ee6ae6f6, type: 2}
+  verbose: 1
