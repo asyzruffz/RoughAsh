@@ -10,7 +10,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1499988447466849770, guid: a129d8d8072a1aa49aaa86787aebd012, type: 3}
       propertyPath: m_Name
-      value: Capsule with Health
+      value: Enclosure Segment
       objectReference: {fileID: 0}
     - target: {fileID: 5980466846158010348, guid: a129d8d8072a1aa49aaa86787aebd012, type: 3}
       propertyPath: m_LocalPosition.x

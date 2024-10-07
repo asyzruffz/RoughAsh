@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6fde0a8ac3e6b482c95fa602e65ab045, type: 3}
   m_Name: RoughAsh
   m_EditorClassIdentifier: 
-  enabled: 1
+  enabled: 0
   take: 1
   captureEveryNthFrame: 1
   fileNameGenerator:
@@ -21,11 +21,11 @@ MonoBehaviour:
       m_Leaf: Recordings
       m_ForceAssetFolder: 0
       m_AbsolutePath: 
-    m_FileName: <Recorder>_<Take>
+    m_FileName: <Recorder>_<Date>_<Time>_<Take>
   encoderSettings:
     rid: 6856193995658231889
   captureAlpha: 0
-  captureAudio: 0
+  captureAudio: 1
   m_ImageInputSelector:
     m_Selected: gameViewInputSettings
     gameViewInputSettings:
@@ -82,7 +82,7 @@ MonoBehaviour:
       colorSpace: 0
       flipFinalOutput: 0
   m_AudioInputSettings:
-    preserveAudio: 0
+    preserveAudio: 1
   _accumulationSettings:
     rid: 6856193995658231890
   outputFormat: 0

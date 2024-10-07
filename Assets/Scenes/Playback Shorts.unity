@@ -197,10 +197,6 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7021752303969537651, guid: 5002a16ad8ad1364ca3490b8e3787566, type: 3}
-      propertyPath: sound
-      value: 
-      objectReference: {fileID: 8300000, guid: 5536ad639298c6b4aa28d1f06e49946a, type: 3}
-    - target: {fileID: 7021752303969537651, guid: 5002a16ad8ad1364ca3490b8e3787566, type: 3}
       propertyPath: radius
       value: 2.6
       objectReference: {fileID: 0}
@@ -1012,7 +1008,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   img: {fileID: 1095592593}
-  duration: 1
+  duration: 1.5
   onDone:
     m_PersistentCalls:
       m_Calls:
@@ -1555,10 +1551,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7021752303969537651, guid: 5002a16ad8ad1364ca3490b8e3787566, type: 3}
-      propertyPath: sound
-      value: 
-      objectReference: {fileID: 8300000, guid: 5536ad639298c6b4aa28d1f06e49946a, type: 3}
     - target: {fileID: 7021752303969537651, guid: 5002a16ad8ad1364ca3490b8e3787566, type: 3}
       propertyPath: radius
       value: 1.5
