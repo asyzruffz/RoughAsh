@@ -5,9 +5,12 @@ namespace RoughAsh
 {
     public class Ender : MonoBehaviour
     {
+        [SerializeField]
+        float waitTime = 1f;
+
         public void Exit()
         {
-            Invoke("StopPlaying", 1f);
+            Invoke("StopPlaying", waitTime);
         }
 
         void StopPlaying()
