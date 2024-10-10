@@ -32,10 +32,9 @@ namespace RoughAsh
             body.AddForce(direction * speed, ForceMode2D.Impulse);
         }
 
-        public void BoostSpeed()
+        public void BoostSpeed(float percent)
         {
             Vector2 direction = body.linearVelocity.normalized;
-            float percent = 0.1f;
             MoveTowards(direction * percent);
         }
     }
