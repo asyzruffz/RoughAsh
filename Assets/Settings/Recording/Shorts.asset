@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Shorts
   m_EditorClassIdentifier: 
   enabled: 1
-  take: 2
+  take: 4
   captureEveryNthFrame: 1
   fileNameGenerator:
     m_Path:
@@ -23,7 +23,7 @@ MonoBehaviour:
       m_AbsolutePath: 
     m_FileName: <Recorder>_<Date>_<Time>_<Take>
   encoderSettings:
-    rid: 6856193995658231889
+    rid: 6856194057899606104
   captureAlpha: 0
   captureAudio: 1
   m_ImageInputSelector:
@@ -99,16 +99,6 @@ MonoBehaviour:
   references:
     version: 2
     RefIds:
-    - rid: 6856193995658231889
-      type: {class: CoreEncoderSettings, ns: UnityEditor.Recorder.Encoder, asm: Unity.Recorder.Editor}
-      data:
-        targetBitRate: 8
-        gopSize: 25
-        numConsecutiveBFrames: 2
-        encodingProfile: 2
-        keyframeDistance: 25
-        codec: 0
-        encodingQuality: 2
     - rid: 6856193995658231890
       type: {class: AccumulationSettings, ns: , asm: Unity.Recorder.Editor}
       data:
@@ -143,3 +133,13 @@ MonoBehaviour:
         shutterFullyOpen: 0.25
         shutterBeginsClosing: 0.75
         useSubPixelJitter: 1
+    - rid: 6856194057899606104
+      type: {class: CoreEncoderSettings, ns: UnityEditor.Recorder.Encoder, asm: Unity.Recorder.Editor}
+      data:
+        targetBitRate: 8
+        gopSize: 25
+        numConsecutiveBFrames: 2
+        encodingProfile: 2
+        keyframeDistance: 25
+        codec: 0
+        encodingQuality: 2
