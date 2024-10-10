@@ -68,11 +68,11 @@ namespace RoughAsh
                     audio.resource = sound;
                 }
 
-                var dmg = wallSegment.GetComponent<DamageOnCollision2D>();
-                if (dmg)
+                var trigger = wallSegment.GetComponent<Trigger>();
+                if (trigger)
                 {
-                    dmg.OnTriggerAfterDeath.RemoveListener(Breached);
-                    dmg.OnTriggerAfterDeath.AddListener(Breached);
+                    trigger.OnExit.RemoveListener(Breached);
+                    trigger.OnExit.AddListener(Breached);
                 }
             }
         }

@@ -13,34 +13,6 @@ PrefabInstance:
       value: Enclosure Segment
       objectReference: {fileID: 0}
     - target: {fileID: 5980466846158010348, guid: a129d8d8072a1aa49aaa86787aebd012, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5980466846158010348, guid: a129d8d8072a1aa49aaa86787aebd012, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5980466846158010348, guid: a129d8d8072a1aa49aaa86787aebd012, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5980466846158010348, guid: a129d8d8072a1aa49aaa86787aebd012, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5980466846158010348, guid: a129d8d8072a1aa49aaa86787aebd012, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5980466846158010348, guid: a129d8d8072a1aa49aaa86787aebd012, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5980466846158010348, guid: a129d8d8072a1aa49aaa86787aebd012, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5980466846158010348, guid: a129d8d8072a1aa49aaa86787aebd012, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
@@ -88,8 +60,8 @@ MonoBehaviour:
   onDeath:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 5264370476569570181}
-        m_TargetAssemblyTypeName: RoughAsh.DamageOnCollision2D, Assembly-CSharp
+      - m_Target: {fileID: 9059598140490869943}
+        m_TargetAssemblyTypeName: RoughAsh.Trigger, Assembly-CSharp
         m_MethodName: TurnToTrigger
         m_Mode: 1
         m_Arguments:
@@ -212,3 +184,14 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &9059598140490869943 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 778835838760635782, guid: a129d8d8072a1aa49aaa86787aebd012, type: 3}
+  m_PrefabInstance: {fileID: 8607737420019179825}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7180378381973136603}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b87c8b5fdc04a1a408920a3f16116beb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
