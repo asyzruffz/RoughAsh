@@ -302,9 +302,25 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2028777793820899844, guid: efb1fe2cc9243ed439dd3baab697ef11, type: 3}
+      propertyPath: m_Color.b
+      value: 0.24705882
+      objectReference: {fileID: 0}
+    - target: {fileID: 2028777793820899844, guid: efb1fe2cc9243ed439dd3baab697ef11, type: 3}
+      propertyPath: m_Color.g
+      value: 0.03137255
+      objectReference: {fileID: 0}
+    - target: {fileID: 2028777793820899844, guid: efb1fe2cc9243ed439dd3baab697ef11, type: 3}
+      propertyPath: m_Color.r
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2144788771376536938, guid: efb1fe2cc9243ed439dd3baab697ef11, type: 3}
       propertyPath: m_Name
       value: Ball 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2144788771376536938, guid: efb1fe2cc9243ed439dd3baab697ef11, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 3215296306682988717, guid: efb1fe2cc9243ed439dd3baab697ef11, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1240,9 +1256,25 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2028777793820899844, guid: efb1fe2cc9243ed439dd3baab697ef11, type: 3}
+      propertyPath: m_Color.b
+      value: 0.06666667
+      objectReference: {fileID: 0}
+    - target: {fileID: 2028777793820899844, guid: efb1fe2cc9243ed439dd3baab697ef11, type: 3}
+      propertyPath: m_Color.g
+      value: 0.81960785
+      objectReference: {fileID: 0}
+    - target: {fileID: 2028777793820899844, guid: efb1fe2cc9243ed439dd3baab697ef11, type: 3}
+      propertyPath: m_Color.r
+      value: 0.9529412
+      objectReference: {fileID: 0}
     - target: {fileID: 2144788771376536938, guid: efb1fe2cc9243ed439dd3baab697ef11, type: 3}
       propertyPath: m_Name
       value: Ball 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2144788771376536938, guid: efb1fe2cc9243ed439dd3baab697ef11, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 3215296306682988717, guid: efb1fe2cc9243ed439dd3baab697ef11, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1346,6 +1378,53 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5980466846158010348, guid: a129d8d8072a1aa49aaa86787aebd012, type: 3}
   m_PrefabInstance: {fileID: 2035628566}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2082962333
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2082962335}
+  - component: {fileID: 2082962334}
+  m_Layer: 0
+  m_Name: Bricks
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2082962334
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2082962333}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c1f00133a152f541978cfc7569808da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  brickPrefab: {fileID: 4897638979985522543, guid: ac032a8f4e5e40e4bb35aceb7a2d0bd8, type: 3}
+  rowPerSide: 8
+  colPerSide: 16
+--- !u!4 &2082962335
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2082962333}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1700952383022508469
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1454,3 +1533,4 @@ SceneRoots:
   - {fileID: 1525496804}
   - {fileID: 1905230349}
   - {fileID: 368676438}
+  - {fileID: 2082962335}
