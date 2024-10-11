@@ -3,20 +3,24 @@ using UnityEngine.Events;
 
 namespace RoughAsh
 {
-    [RequireComponent(typeof(Collider2D))]
     public class Trigger : MonoBehaviour
     {
         [SerializeField]
         bool verbose = false;
 
+        [Space]
         public UnityEvent<GameObject> OnEnter;
         public UnityEvent<GameObject> OnExit;
 
-        Collider2D body;
-
         void Start()
         {
-            body = GetComponent<CapsuleCollider2D>();
+            var body2D = GetComponent<Collider2D>();
+            var body3D = GetComponent<Collider>();
+            if (body2D == null && body3D == null)
+            {
+                Debug.LogError("Trigger: No collider component found");
+                return;
+            }
         }
 
         void OnTriggerEnter2D(Collider2D collider)
@@ -51,6 +55,7 @@ namespace RoughAsh
                 sprite.enabled = false;
             }
 
+            var body = GetComponent<Collider2D>();
             body.isTrigger = true;
         }
     }

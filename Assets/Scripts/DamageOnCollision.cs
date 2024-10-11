@@ -3,7 +3,7 @@ using UnityEngine;
 namespace RoughAsh
 {
     [RequireComponent (typeof(Health))]
-    public class DamageOnCollision2D : MonoBehaviour
+    public class DamageOnCollision : MonoBehaviour
     {
         Health health;
 
@@ -12,7 +12,7 @@ namespace RoughAsh
             health = GetComponent<Health>();
         }
 
-        void OnCollisionEnter2D(Collision2D collision)
+        public void OnCollision(GameObject other)
         {
             health.TakeDamage(1);
 

@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 3706689052484411224}
   - component: {fileID: 2495619108353092433}
   - component: {fileID: 7324409869347329867}
+  - component: {fileID: 1269667496010666584}
   - component: {fileID: 778835838760635782}
   m_Layer: 0
   m_Name: Capsule
@@ -169,6 +170,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Colour: {r: 1, g: 1, b: 1, a: 1}
   length: 2
+--- !u!114 &1269667496010666584
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1499988447466849770}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 500e60c2d634b4445882ef20438ef3b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  verbose: 0
+  OnEnter:
+    m_PersistentCalls:
+      m_Calls: []
+  OnExit:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &778835838760635782
 MonoBehaviour:
   m_ObjectHideFlags: 0
