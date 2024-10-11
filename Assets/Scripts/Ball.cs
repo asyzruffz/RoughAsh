@@ -22,13 +22,12 @@ namespace RoughAsh
         {
             body.gravityScale = gravity;
             //Vector2 direction = (new Vector2(1, -1)).normalized;
-            Vector2 direction = Random.insideUnitCircle;
+            Vector2 direction = Random.insideUnitCircle.normalized;
             MoveTowards(direction);
         }
 
         void MoveTowards(Vector2 direction)
         {
-            //body.linearVelocity = direction * speed;
             body.AddForce(direction * speed, ForceMode2D.Impulse);
         }
 

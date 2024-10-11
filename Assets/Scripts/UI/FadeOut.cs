@@ -40,6 +40,7 @@ namespace RoughAsh
             if (timer <= 0)
             {
                 done = true;
+                timer = 0;
                 onDone?.Invoke();
             }
 

@@ -182,9 +182,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   verbose: 0
-  onEnter:
+  OnEnter:
     m_PersistentCalls:
       m_Calls: []
-  onExit:
+  OnExit:
     m_PersistentCalls:
       m_Calls: []
