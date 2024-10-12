@@ -1,4 +1,5 @@
 using RoughAsh.Recording;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -21,11 +22,12 @@ namespace RoughAsh
                 return;
             }
 
-            Invoke("StartRecording", 1f);
+            StartCoroutine(StartRecording());
         }
 
-        void StartRecording()
+        IEnumerator StartRecording()
         {
+            yield return new WaitForSeconds(1f);
             recording?.StartRecording();
             Simulate();
         }
