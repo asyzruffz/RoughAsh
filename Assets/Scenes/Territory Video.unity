@@ -136,7 +136,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &66596859
 RectTransform:
   m_ObjectHideFlags: 0
@@ -520,7 +520,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3818484516439788539, guid: efb1fe2cc9243ed439dd3baab697ef11, type: 3}
       propertyPath: speed
-      value: 25
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 3818484516439788539, guid: efb1fe2cc9243ed439dd3baab697ef11, type: 3}
       propertyPath: OnHalted.m_PersistentCalls.m_Calls.Array.size
@@ -1495,7 +1495,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1438105883
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1969,7 +1969,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3818484516439788539, guid: efb1fe2cc9243ed439dd3baab697ef11, type: 3}
       propertyPath: speed
-      value: 25
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 3818484516439788539, guid: efb1fe2cc9243ed439dd3baab697ef11, type: 3}
       propertyPath: OnHalted.m_PersistentCalls.m_Calls.Array.size
@@ -2062,6 +2062,10 @@ PrefabInstance:
     - target: {fileID: 8560076195139758774, guid: efb1fe2cc9243ed439dd3baab697ef11, type: 3}
       propertyPath: OnEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 8982515612796071123, guid: efb1fe2cc9243ed439dd3baab697ef11, type: 3}
+      propertyPath: m_Time
+      value: 0.05
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2206,10 +2210,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2175924179796690615, guid: 8b751f0e6d28f694fa95496af75038fb, type: 3}
-      propertyPath: disabled
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 3713183235322035042, guid: 8b751f0e6d28f694fa95496af75038fb, type: 3}
       propertyPath: m_Name
       value: Video Camera
