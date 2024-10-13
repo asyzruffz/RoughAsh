@@ -34,7 +34,14 @@ namespace RoughAsh
         {
             if (halted) return;
 
-            if (body.linearVelocity.magnitude <= haltThreshold)
+            float currentSpeed = body.linearVelocity.magnitude;
+
+            if (currentSpeed > speed + 1)
+            {
+                body.linearVelocity = body.linearVelocity.normalized * speed;
+            }
+
+            if (currentSpeed <= haltThreshold)
             {
                 halted = true;
                 StartCoroutine(Halt());
